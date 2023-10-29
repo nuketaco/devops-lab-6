@@ -1,10 +1,10 @@
 CC = gcc
-PROG_NAME ?= counter
+PROG_NAME ?= hello_world
 
-$(PROG_NAME): counter.c
-	$(CC) -o $(PROG_NAME) counter.c
+$(PROG_NAME): hello_world.c
+	$(CC) -o $(PROG_NAME) hello_world.c
 
 .PHONY: clean
 
 clean:
-	rm -f counter
+	rm -f hello_world
